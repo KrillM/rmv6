@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { users } from "../db.ts"
 
 export default function Home(){
+    const [reachSearchParams, setSeatchParams] = useSearchParams();
+
     return (
         <div>
             <h1>Users</h1>
