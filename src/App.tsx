@@ -1,8 +1,12 @@
-import Router from "./Router.tsx";
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header.tsx"
 
 function App() {
   return (
-    <Router />
+    <div>
+      <Header />
+      <Outlet />
+    </div>
   );
 }
 
